@@ -1,0 +1,60 @@
+    <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">登陆/注册表</h4>
+            </div>
+            <div class="modal-body">
+          <form action="users/zhuce" method="post">
+                <table style='float: left;height:160px;'>
+                 <tr>
+                     <td>email</td>
+                     <td><input type="text" name="email"></td>
+                 </tr>
+                 <tr>
+                     <td>昵称</td>
+                     <td><input type="text" name="nicheng"></td>
+                 </tr>
+                  <tr>
+                     <td>密码</td>
+                     <td><input type="password" name="pwd"></td>
+                 </tr>
+                  <tr>
+                     <td>重复密码</td>
+                     <td><input type="password" name="rpwd"></td>
+                 </tr>
+                 <tr>
+                     
+                    <td align='center' colspan="2"><input type="submit" class="btn btn-primary" value="注册">
+                    </td>
+                 </tr>
+                </table>
+          </form>
+           <form action="users/login" method="post">
+                <table  style='float: right;height:170px;'>
+                 <tr>
+                     <td>email</td>
+                     <td><input type="text" name="email"></td>
+                 </tr>
+                  <tr>
+                     <td>密码</td>
+                     <td><input type="password" name="pwd"></td>
+                 </tr>
+                 <tr>
+                     <td align='center' colspan="2"><input type="submit" class="btn btn-primary" value="登陆">
+                      </td>
+                 </tr>
+                </table>
+          </form>
+
+            </div>
+            <div class="modal-footer" style="clear:both;">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+ <button type="button" class="btn btn-primary">提交更改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
